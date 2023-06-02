@@ -1,0 +1,118 @@
+.titulo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 28px;
+    margin-top: 50px;
+    font-size: 3.4rem;
+    flex-direction: column;
+    font-weight: initial;
+    padding: 0;
+    padding-bottom: 2px;
+    align-self: center;
+}
+
+.titulo .titulos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+
+}
+
+.titulo #mv{ 
+    position: relative;
+    top: 20px;
+    animation: descer 2s linear infinite alternate;
+}
+
+.titulo #meu {
+    position: relative;
+    top: 70px;
+    animation: subir 2s linear infinite alternate;
+}
+
+@keyframes descer {
+    33.33%{
+        top: 20px;
+    }
+
+    70%{
+        top: 70px
+    }
+    
+    80%{
+        top: 70px
+    }
+
+    100%{
+        top: 70px
+    }
+}
+
+@keyframes subir{
+    33.33%{
+        top: 70px;
+    }
+
+    70%{
+        top: -8px
+    }
+
+    80%{
+        top: -8px
+    }
+
+    100%{
+        top: -8px
+    }
+}
+
+#franca{
+    position: relative;
+    top: 4px;
+    animation: subirBaixo 2s linear infinite alternate;
+}
+
+@keyframes subirBaixo{
+    33.33%{
+        top: 4px;
+    }
+
+    70%{
+        top: -60px
+    }
+
+    80%{
+        top: -60px
+    }
+
+    100%{
+        top: -60px
+    }
+}
+
+#portfolio{
+    position: relative;
+    top: -70px;
+    animation: subirDepois 2s linear infinite alternate;
+}
+
+@keyframes subirDepois{
+    33.33%{
+        top: -70px;
+    }
+
+    70%{
+        top: -22px;
+    }
+
+    80%{
+        top: -22px;
+    }
+
+    100%{
+        top: -22px;
+    }
+}

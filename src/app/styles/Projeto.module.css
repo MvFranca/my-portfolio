@@ -1,0 +1,52 @@
+.fullProjects{
+    margin-top: 30px;
+    text-align: center;
+    height: max-content;
+}
+
+.projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.informacoes h3{
+    margin-top: 18px;
+    font-size: 0.9rem;
+    font-weight: initial;
+
+}
+
+.projetos h2{
+    font-size: 1.14rem;
+    padding-top: 13px;
+}
+
+.projetos p{
+    margin-top: 10px;
+    font-size: 0.75rem;
+    padding: 0px 6px;
+    text-align: center;
+}
+
+.projetos img{
+    border-radius: 5px;
+}
+
+.informacoes{
+    margin-left: -35px;
+    text-align: center;
+}
+
+.linha{
+    width: 35px;
+    background-color: black;
+    height: 3px;
+}
+
+.tudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

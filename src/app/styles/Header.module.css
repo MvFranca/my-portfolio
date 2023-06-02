@@ -1,0 +1,41 @@
+@import url(//db.onlinewebfonts.com/c/021f3eb1da35b2a042907dc870c00b9c?family=TwentiethCenturyW01-XBdCn);
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fce373;
+    font-family: TwentiethCenturyW01-XBdCn, Arial, Helvetica, sans-serif;
+    height: max-content;
+}
+
+.cabecalho button{
+    border: 2.5px solid rgba(37, 32, 0, 0.075);
+    height: max-content;
+    background-color: #fce373;
+    display: flex;
+    align-items: center;
+    border-radius: 43%;
+    padding: 0.7rem 0.8rem;
+    gap: 7px;
+    margin: 15px;
+    position: absolute;
+    left: 0;
+}
+
+.cabecalho .navegacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.cabecalho .navegacao p{
+    align-self: center;
+  
+    text-align: center;
+    
+    line-height: 18px;
+    font-size: 1.4rem;
+    
+}

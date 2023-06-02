@@ -1,0 +1,43 @@
+.projetos{
+    height: fit-content;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    width: 100vw;
+    background-color: #cca69a;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    flex-direction: column;
+}
+
+.fullProjects{
+    background-color:#cca69a;
+}
+
+.fullProjects h2{
+    padding-top: 70px;
+    font-size: 1.65rem;
+    color: #231f20;
+    background-color:#cca69a;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrossel{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 250px;
+  /*  animation: carrossel 4s 0.5s infinite linear alternate-reverse; */
+}
+
+@keyframes carrossel {
+    to{
+        margin-left: 0;
+    }
+
+    from{
+        margin-left: 100%;
+    }
+}
