@@ -4,7 +4,7 @@ import Projeto from './Projeto'
 const Projetos = () => {
     return(
             <section className={styles.fullProjects}>
-                <h2>
+                <h2  className={styles.titulo}>
                     PROJETOS
                 </h2>
                 <div className={styles.projetos}>

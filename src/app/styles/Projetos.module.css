@@ -1,6 +1,6 @@
 .projetos{
     height: fit-content;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 
     width: 100vw;
     background-color: #cca69a;
@@ -14,7 +14,7 @@
     background-color:#cca69a;
 }
 
-.fullProjects h2{
+.titulo{
     padding-top: 70px;
     font-size: 1.65rem;
     color: #231f20;
