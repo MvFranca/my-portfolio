@@ -18,6 +18,9 @@ const Habilidades = () => {
                         <IconHtml5 width={120} height={120}/>
                         <h3>HTML5</h3>
                     </div>
+                    <div className={styles.descricao}>
+                        HTML É UMA LINGUAGEM DE MARCAÇÃO.
+                    </div>
                 </div>
                 <div className={styles.skill}>
                     <div className={styles.nome}>

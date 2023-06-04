@@ -23,22 +23,39 @@
     
 }
 
+
 .skill{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 60px;
-    gap: 15px;
+    gap: 2rem;
     border: 2px solid #231f20;
     padding: 18px;
-    transition: 0.2s all;
+    height: 8rem;
+    width: 20rem;
+    transition: 0.5s all;
     overflow: hidden;
 }
 
+.descricao{
+    display: none;
+    margin-left: 1000px;
+    transition: 3s all;
+}
 
 .skill:hover{
     background-color: #aaaaaa91;
 
+}
+
+.skill:hover .nome{
+    display: none;
+  }
+
+.skill:hover .descricao{
+    display: flex;
+    margin-left: 0px;
 }
 
 .skill h3{

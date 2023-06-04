@@ -1,0 +1,11 @@
+.sobre{
+    height: 80vh;
+    background-color: #A385BD;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.sobre h2{
+    font-size: 2.5rem;
+}

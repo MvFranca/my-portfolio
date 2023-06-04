@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import Projetos from '@/components/Projetos'
 import Habilidades from '@/components/Habilidades'
 import Contato from '@/components/Contato'
+import Sobre from '@/components/Sobre'
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
     <>
     <Header/>
     <Projetos/>
+    <Sobre/>
     <Habilidades/>
     <Contato/>
     </>
