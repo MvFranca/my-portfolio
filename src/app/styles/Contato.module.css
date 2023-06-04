@@ -1,0 +1,13 @@
+.contato{
+    height: 80vh;
+    background-color: #FCE373;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+
+}
+
+.contato h2{
+    font-size: 2.5rem;
+}

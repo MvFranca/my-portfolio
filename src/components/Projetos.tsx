@@ -1,5 +1,6 @@
 import styles from '../app/styles/Projetos.module.css'
 import Projeto from './Projeto'
+import IconGithub from './icons/iconGithub'
 
 const Projetos = () => {
     return(
@@ -20,7 +21,26 @@ const Projetos = () => {
                         alt='Projeto TODO-list'
                         description='TODO-LIST'
                         />
+                        <Projeto
+                        src="/to-do-list.png"
+                        alt='Projeto TODO-list'
+                        description='TODO-LIST'
+                        />
+                        <Projeto
+                        src="/to-do-list.png"
+                        alt='Projeto TODO-list'
+                        description='TODO-LIST'
+                        />
                     </div>
+                </div>
+                <div className={styles.github}>
+                    
+                    <a href="#">
+                    
+                        <IconGithub width={20} height={20}/>
+                    
+                        Acesse meu Github
+                    </a>
                 </div>
             </section>
     )
