@@ -15,7 +15,6 @@ const Projetos = () => {
         fetch('http://localhost:3000/dados/carrossel.json').then((response) => response.json()).then(setProjetos)
     }, [])
 
-    if (!projetos || !projetos.length) return null
 
     return (
         <section className={styles.fullProjects}>

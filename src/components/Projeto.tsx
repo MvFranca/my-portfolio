@@ -12,7 +12,7 @@ const Projeto = ({description, alt, src, titulo, tecnologias}:props) => {
     return(
             <div className={styles.projetos}>
                 <div className={styles.tudo}>
-                    <img src={src} alt={alt} width={140} height={100}/>
+                    <img src={src} alt={alt} width={180} height={140}/>
                     <h2>
                         {titulo}
                     </h2>
