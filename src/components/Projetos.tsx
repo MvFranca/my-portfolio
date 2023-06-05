@@ -12,9 +12,10 @@ const Projetos = () => {
     const [projetos, setProjetos] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:3000/dados/carrossel.json').then((response) => response.json()).then(setProjetos)
+        fetch('https://portfolio-8i5l.vercel.app/dados/carrossel.json').then((response) => response.json()).then(setProjetos)
     }, [])
 
+    if (!projetos || !projetos.length) return null
 
     return (
         <section className={styles.fullProjects}>
