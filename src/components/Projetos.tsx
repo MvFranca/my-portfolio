@@ -12,7 +12,9 @@ const Projetos = () => {
     const [projetos, setProjetos] = useState([])
 
      useEffect(async (params:type) => {
-       await fetch('https://portfolio-8i5l.vercel.app/dados/carrossel.json').then((response) => response.json()).then(setProjetos)
+        const api = await fetch('https://portfolio-8i5l.vercel.app/dados/carrossel.json')
+        const dados = await api.json()
+        setProjetos(dados)
      }, [])
 
    
