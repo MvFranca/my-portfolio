@@ -22,7 +22,7 @@ const Projetos = () => {
         api()
     }, [])
 
-    if (!projetos || !projetos.length) return null
+    
 
     return (
         <section className={styles.fullProjects}>
