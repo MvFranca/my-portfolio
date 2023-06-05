@@ -1,17 +1,17 @@
 [
     {
         "id": "1",
-        "titulo": "TODO-LIST",
-        "img": "./pokenext.png",
-        "tecnologias": "ReactJs e MONGODB",
-        "descricao": "Permite adicionar, editar e excluir tarefas. opa"
-    },
-    {
-        "id": "2",
         "titulo": "Pokenext",
         "img": "./pokenext.png",
         "tecnologias": "NextJs e ReactJs",
         "descricao": "Exibe 251 Pokemons dinâmicamente... opa meu amigo opa meu amigoaaaopa meu amigo opa meu amigo opa meu amigo opa meu amigo"
+    },
+    {
+        "id": "2",
+        "titulo": "TODO-LIST",
+        "img": "./pokenext.png",
+        "tecnologias": "ReactJs e MONGODB",
+        "descricao": "Permite adicionar, editar e excluir tarefas. opa"
     },
     {
         "id": "3",

@@ -1,13 +1,24 @@
 .sobre{
-    height: 200px;
+    height: max-content;
     background-color: #A385BD;
     display: flex;
+    gap: 25px;
     flex-direction: column;
     align-items: center;
-    padding-top: 60px;
+    padding: 50px 40px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.sobre img{
+    width: 12em;
+    height: 15em;
+    border-radius: 10px;
+    margin-top: 25px;
 }
 
 .sobre h2{
+    
     font-size: 2.5rem;
     width: max-content;
     border-bottom: 2px solid #231f20;
