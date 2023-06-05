@@ -11,13 +11,13 @@ import { resolve } from 'path'
 const Projetos = () => {
     const [projetos, setProjetos] = useState([])
 
-     useEffect(async (params:type) => {
-        const api = await fetch('https://portfolio-8i5l.vercel.app/dados/carrossel.json')
-        const dados = await api.json()
-        setProjetos(dados)
-     }, [])
+    async function api() {
+        await fetch('http://localhost:3000/dados/carrossel.json').then((response) => response.json()).then(setProjetos)
+    }
 
-   
+    useEffect(() => {
+        api()
+    }, [])
 
     if (!projetos || !projetos.length) return null
 
