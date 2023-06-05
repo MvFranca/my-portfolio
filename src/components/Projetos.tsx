@@ -11,9 +11,11 @@ import { resolve } from 'path'
 const Projetos = () => {
     const [projetos, setProjetos] = useState([])
 
-    useEffect(() => {
-        fetch('https://portfolio-8i5l.vercel.app/dados/carrossel.json').then((response) => response.json()).then(setProjetos)
-    }, [])
+     useEffect(async (params:type) => {
+       await fetch('https://portfolio-8i5l.vercel.app/dados/carrossel.json').then((response) => response.json()).then(setProjetos)
+     }, [])
+
+   
 
     if (!projetos || !projetos.length) return null
 
