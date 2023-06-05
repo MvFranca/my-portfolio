@@ -1,37 +1,47 @@
+"use client"
+
+import { useEffect, useState } from 'react'
 import styles from '../app/styles/Projetos.module.css'
 import Projeto from './Projeto'
 import IconGithub from './icons/iconGithub'
+import { resolve } from 'path'
+
+
 
 const Projetos = () => {
-    return(
-            <section className={styles.fullProjects}>
-                <h2  className={styles.titulo}>
-                    PROJETOS
-                </h2>
-                <div className={styles.projetos}>
-                    <div className={styles.carrossel}>
-                        <Projeto
-                        src="/pokenext.png"
-                        alt='Projeto Pokenext'
-                        description='POKENEXT'
-                        />
-                 
-                        <Projeto
-                        src="/to-do-list.png"
-                        alt='Projeto TODO-list'
-                        description='TODO-LIST'
-                        />
-                        <Projeto
-                        src="/to-do-list.png"
-                        alt='Projeto TODO-list'
-                        description='TODO-LIST'
-                        />
-                        <Projeto
-                        src="/to-do-list.png"
-                        alt='Projeto TODO-list'
-                        description='TODO-LIST'
-                        />
-                    </div>
+    const [projetos, setProjetos] = useState([])
+
+    useEffect(() => {
+        fetch('http://localhost:3000/dados/carrossel.json').then((response) => response.json()).then(setProjetos)
+    }, [])
+
+    if (!projetos || !projetos.length) return null
+
+    return (
+        <section className={styles.fullProjects}>
+            <h2 className={styles.titulo}>
+                PROJETOS
+            </h2>
+            <div className={styles.projetos}>
+
+                <div className={styles.carrossel}>
+                    {
+                        projetos.map(projeto => {
+                            const { id, titulo, img, tecnologias, descricao } = projeto
+                            return (
+                                <Projeto
+                                    src={img}
+                                    alt={titulo}
+                                    titulo={titulo}
+                                    tecnologias={tecnologias}
+                                    description={descricao}
+                                    key={id}
+                                />
+                            )
+                        })
+                    }
+                </div>
+                            
                 </div>
                 <div className={styles.github}>
                     

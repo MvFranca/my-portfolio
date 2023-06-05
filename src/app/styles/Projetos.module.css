@@ -1,34 +1,36 @@
 .projetos{
-    height: fit-content;
+   
     padding-bottom: 50px;
-
+    
     width: 100vw;
     background-color: #cca69a;
     display: flex;
-    align-items: center;
     overflow-x: scroll;
-    flex-direction: column;
+    scroll-behavior: smooth;
+
 }
 
 .fullProjects{
     background-color:#cca69a;
+    padding-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titulo{
-    padding-top: 70px;
-    font-size: 1.55rem;
+    font-size: 2rem;
     color: #231f20;
     background-color:#cca69a;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-bottom: 2px solid #231f20;
+    border-radius: 2px;
 }
 
 .carrossel{
     display: flex;
+    
     margin-top: 25px;
-    margin-left: 250px;
   /*  animation: carrossel 4s 0.5s infinite linear alternate-reverse; */
 }
 

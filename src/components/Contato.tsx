@@ -10,6 +10,9 @@ const Contato = () => {
                         <input type="text" name="name" className={styles.dados} placeholder='Nome'/>
                         <input type="email" name="email" className={styles.dados} placeholder='E-mail'/>
                     </div>
+                    <div className={styles.Assunto}>
+                        <input type="text" name="assunto" placeholder='Digite o assunto' className={styles.assunto}/>
+                    </div>
                     <div>
                         <input type="text" name="message" placeholder='Envie uma mensagem...' className={styles.message}/>
                     </div>

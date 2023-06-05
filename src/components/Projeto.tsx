@@ -4,32 +4,25 @@ type props = {
     alt: string;
     src: string;
     description: string;
+    tecnologias: string;
+    titulo: string;
 }
 
-const Projeto = ({description, alt, src}:props) => {
+const Projeto = ({description, alt, src, titulo, tecnologias}:props) => {
     return(
-        <div>
             <div className={styles.projetos}>
                 <div className={styles.tudo}>
-                    <img src={src} alt={alt} width={260} height={260}/>
-                    <div className={styles.linha}>
-                    </div>
+                    <img src={src} alt={alt} width={140} height={100}/>
+                    <h2>
+                        {titulo}
+                    </h2>
                 </div>
                 <div className={styles.informacoes}>
-                    <h3>
-                        {description}
-                    </h3>
-                    <h2>
-                        NextJs e ReactJs
-                    </h2>
                     <p>
-                        Exibe 251 Pokemons dinâmicamente...
+                        {description}
                     </p>
-                </div>
-            
+                </div>  
             </div>
-           
-        </div>
     )
 }
 

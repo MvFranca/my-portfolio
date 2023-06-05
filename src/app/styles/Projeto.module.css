@@ -1,14 +1,18 @@
-.fullProjects{
-    margin-top: 30px;
-    text-align: center;
-    height: max-content;
-}
-
 .projetos{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    width: 75vw;
+   /* box-shadow: 0px 0px 3px 2px #fce373;*/
+    border-radius: 5px;
+    border: 2px solid #fce373; 
+    color: #fce373;
+    background-color: #3b3b3b;
+    color: #fff;
+    height: 400px;
+    margin: 15px;
+    padding: 40px 30px;
 }
 
 .informacoes h3{
@@ -19,14 +23,17 @@
 }
 
 .projetos h2{
-    font-size: 1.14rem;
+    font-size: 1.7rem;
     padding-top: 13px;
+    
+    margin: auto;
+    overflow-x: hidden;
 }
 
 .projetos p{
     margin-top: 10px;
     font-size: 0.75rem;
-    padding: 0px 6px;
+    padding: 0px 10px;
     text-align: center;
 }
 
@@ -34,19 +41,15 @@
     border-radius: 5px;
 }
 
-.informacoes{
-    margin-left: -35px;
+.informacoes p{
     text-align: center;
-}
-
-.linha{
-    width: 35px;
-    background-color: #000;
-    height: 3px;
+    height: 50%;
+  
 }
 
 .tudo{
-    display: flex;
+    display: flex;flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 50%;
 }

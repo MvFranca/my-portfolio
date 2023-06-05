@@ -15,12 +15,12 @@
     align-items: center;
 }
 
-.contato .dados{
+.contato .dados, .assunto{
     border: none;
     color: #231f20;
     background-color: #FCE373;
     border-bottom: 2px solid #231f20;
-    width: 45%;
+    width: 48%;
     padding: 2px;
 }
 
@@ -34,6 +34,22 @@
     width: 90vw;
     margin-top: 40px;
 }
+
+.Assunto{
+   display: flex;
+   justify-content: center;
+   margin-top: 25px;
+   width: 100%;
+}
+
+.assunto{
+    width: 100%;
+}
+
+.assunto::placeholder{
+    color: #231f20;
+}
+
 
 .message::-webkit-input-placeholder {
     font-size: 25px;
@@ -65,12 +81,13 @@
 .inputs{
     margin-top: 40px;
     display: flex;
-    gap: 5px;
+    gap: 8px;
     justify-content: space-around;
 }
 
 .contato h2{
     font-size: 2.5rem;
+    border-bottom: 2px solid #231f20;
 }
 
 .enviar{
@@ -82,6 +99,8 @@
     color: #fff;
     background-color: #231f20;
 }
+
+
 
 .contato footer{
     width: 90vw;
