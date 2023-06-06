@@ -31,7 +31,7 @@
     display: flex;
     
     margin-top: 25px;
- animation: carrossel 4s 0.5s infinite linear alternate-reverse; 
+ /*animation: carrossel 4s 0.5s infinite linear alternate-reverse; */
 }
 
 .github{

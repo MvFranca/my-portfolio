@@ -1,4 +1,5 @@
 
+
 import styles from '../app/styles/Navbar.module.css'
 import IconLinkedin from "./icons/IconLinkedin"
 import IconGithub from "./icons/iconGithub"
@@ -6,7 +7,12 @@ import IconInstagram from "./icons/iconInstagram"
 import IconContacts from "./icons/iconContact"
 import IconMenu2Fill from './icons/IconMenuNavbar'
 
-const Navbar = () => {
+type props = {
+    abrirFechar: () => void;
+}
+
+const Navbar = ({abrirFechar}: props) => {
+
     return(
         <nav className={styles.nav}>
             <section>
@@ -20,7 +26,7 @@ const Navbar = () => {
                         <IconGithub width={30} height={30}/>
                     </a>
                 </div>
-                <button>
+                <button onClick={abrirFechar}>
                     <IconMenu2Fill width={40} height={40}/>
                 </button>
                 <div>
