@@ -4,9 +4,6 @@
     
     width: 100vw;
     background-color: #cca69a;
-    display: flex;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
 
 }
 
@@ -61,4 +58,30 @@
     from{
         margin-left: -240%;
     }
+}
+
+.container{
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.seperator{
+    width: 100%;
+}
+
+.controlsWrapper{
+    width: 100%;
+}
+
+.carouselWrapper{
+    width: 100%;
+}
+
+.recCarouselItem:focus{
+    outline: none;
+    box-shadow: inset 0 0 1px rgb(238, 130, 238);
 }

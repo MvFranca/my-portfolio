@@ -2,14 +2,23 @@
 
 import { useEffect, useState } from 'react'
 import styles from '../app/styles/Projetos.module.css'
-import Projeto from './Projeto'
+
 import IconGithub from './icons/iconGithub'
-import { resolve } from 'path'
-
-
+import Carousel from 'react-elastic-carousel'
+import Projeto from './Projeto'
 
 const Projetos = () => {
+    const breakPoints = [
+        {width: 1, itemToShow: 1 },
+        {width: 550, itemToShow: 2, itemToScroll: 2},
+        {width: 768, itemToShow: 3},
+        {width: 1200, itemToSho: 4},
+    ]
+
+
+
     const [projetos, setProjetos] = useState([])
+  
 
     async function api() {
         const api = await fetch('https://portfolio-8i5l.vercel.app/dados/carrossel.json')
@@ -25,7 +34,38 @@ const Projetos = () => {
     
 
     return (
-        <section className={styles.fullProjects}>
+        <div className={styles.fullProjects}>
+            <h2 className={styles.titulo}>
+                PROJETOS
+            </h2>
+            <div className={styles.projetos}>
+                <Carousel isRTL breakPoints={breakPoints} className={styles.carrossel}>
+                 {projetos.map(projeto => {
+                            const { id, titulo, img, tecnologias, descricao } = projeto
+                            return (
+                                <Projeto
+                                    src={img}
+                                    alt={titulo}
+                                    titulo={titulo}
+                                    tecnologias={tecnologias}
+                                    description={descricao}
+                                    key={id}
+                                />
+                            )
+                        })}
+                </Carousel>
+            </div>
+            <div className={styles.github}>
+                    
+                    <a href="#">
+                    
+                        <IconGithub width={20} height={20}/>
+                    
+                        Acesse meu Github
+                    </a>
+                </div>
+        </div>
+        /*<section className={styles.fullProjects}>
             <h2 className={styles.titulo}>
                 PROJETOS
             </h2>
@@ -59,7 +99,8 @@ const Projetos = () => {
                         Acesse meu Github
                     </a>
                 </div>
-            </section>
+            </section> */
+        
     )
 }
 
