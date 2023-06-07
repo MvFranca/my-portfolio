@@ -4,27 +4,27 @@
         "titulo": "Pokenext",
         "img": "./pokenext.png",
         "tecnologias": "NextJs e ReactJs",
-        "descricao": "Exibe 251 Pokemons dinâmicamente... opa meu amigo opa meu amigoaaaopa meu amigo opa meu amigo opa meu amigo opa meu amigo"
+        "descricao": "Exibe 251 Pokemons dinâmicamente... opa meu amigo opa meu amigoaaaopa meu amigo opa meu amigo opa meu amigo opa meu amigos."
     },
     {
         "id": "2",
         "titulo": "TODO-LIST",
         "img": "./pokenext.png",
         "tecnologias": "ReactJs e MONGODB",
-        "descricao": "Permite adicionar, editar e excluir tarefas. opa meu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa meu amigo"
+        "descricao": "Permite adicionar, editar e excluir tarefas. opa meu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa meu amigo."
     },
     {
         "id": "3",
         "titulo": "MV GPT",
         "img": "./pokenext.png",
         "tecnologias": "NextJs, ReactJs e Typescript",
-        "descricao": "Design fiel ao chatgpt opa meu amigo opa meuamigo opa meu amigo opa meu amigo opa meu amigo opa meu amigo gfgfhgf hjmhgjmghmjgh meu amigo opa "
+        "descricao": "Design fiel ao chatgpt opa meu amigo opa meuamigo opa meu amigo opa meu amigo opa meu amigo opa meu amigo gfgfhgf hjmhgjmghmjgh meu amigo opa. "
     },
     {
         "id": "4",
         "titulo": "ANDROID",
         "img": "./pokenext.png",
         "tecnologias": "HTML, CSS",
-        "descricao": "Traz informações sobre o Anroid. meu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa  meu amigomeu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa "
+        "descricao": "Traz informações sobre o Anroid. meu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa  meu amigomeu amigo opa meu amigo opa meu amigo opa meu amigomeu amigo opa."
     }
 ]
