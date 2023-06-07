@@ -39,7 +39,7 @@ const Projetos = () => {
                 PROJETOS
             </h2>
             <div className={styles.projetos}>
-                <Carousel isRTL breakPoints={breakPoints} className={styles.carrossel}>
+                <Carousel  breakPoints={breakPoints} className={styles.carrossel}>
                  {projetos.map(projeto => {
                             const { id, titulo, img, tecnologias, descricao } = projeto
                             return (
