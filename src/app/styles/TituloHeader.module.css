@@ -1,15 +1,21 @@
+@import url(//db.onlinewebfonts.com/c/05d0872c73920fc4541caa9c7950f686?family=Raisonne+DemiBold);
+
 .titulo{
     display: flex;
     justify-content: center;
     text-align: center;
-    line-height: 28px;
+    line-height: 22px;
     margin-top: 50px;
-    font-size: 3.4rem;
+    font-size: 2.8rem;
     flex-direction: column;
-    font-weight: initial;
     padding: 0;
     padding-bottom: 2px;
     align-self: center;
+    font-family: Raisonne DemiBold, Arial;
+}
+
+#estatico{
+    display: none;
 }
 
 .titulo .titulos{
@@ -23,7 +29,7 @@
 
 .titulo #mv{ 
     position: relative;
-    top: 20px;
+    top: 15px;
     animation: descer 2s linear infinite alternate;
 }
 
@@ -35,7 +41,7 @@
 
 @keyframes descer {
     33.33%{
-        top: 20px;
+        top: 15px;
     }
 
     70%{
@@ -71,14 +77,14 @@
 
 #franca{
     position: relative;
-    top: 4px;
+    top: 5px;
     padding: 4px;
     animation: subirBaixo 2s linear infinite alternate;
 }
 
 @keyframes subirBaixo{
     33.33%{
-        top: 4px;
+        top: 5px;
     }
 
     70%{
@@ -116,5 +122,28 @@
 
     100%{
         top: -22px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #movimento{
+       display: none;
+    }
+
+    #estatico{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 4.2em;
+        font-family: Raisonne DemiBold, Arial;
+        padding-top: 90px;
+        line-height: 55px;
+        
+    }
+
+    .dev{
+        font-size: 0.5em;
     }
 }

@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import styles from '../app/styles/MenuMobile.module.css'
 
 type props = {
@@ -8,11 +8,15 @@ type props = {
 }
 
 const MenuMobile = ({stateMenu}: props) => {
-
-    if(!stateMenu) return null
+    const menu = useRef<HTMLElement>(null)
+    
+    useEffect(()=> {
+        if(!stateMenu) menu.current!.style.marginTop = '100vh'
+        else menu.current!.style.marginTop = '0'
+    }, [stateMenu])
 
     return(
-        <section className={styles.menuMobile}>
+        <section className={styles.menuMobile} ref={menu}>
             <div className={styles.navegacao}>
                 <h2>
                     DESENVOLVEDOR <br /> FRONT-END

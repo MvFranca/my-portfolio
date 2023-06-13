@@ -21,7 +21,7 @@ const Projetos = () => {
   
 
     async function api() {
-        const api = await fetch('https://portfolio-8i5l.vercel.app/dados/carrossel.json')
+        const api = await fetch('http://localhost:3000/dados/carrossel.json')
         const dados = await api.json()
         setProjetos(dados)
       /*  await fetch('http://localhost:3000/dados/carrossel.json').then((response) => response.json()).then(setProjetos) */
@@ -39,7 +39,7 @@ const Projetos = () => {
                 PROJETOS
             </h2>
             <div className={styles.projetos}>
-                <Carousel  breakPoints={breakPoints} className={styles.carrossel}>
+                <Carousel isRTL breakPoints={breakPoints} className={styles.carrossel}>
                  {projetos.map(projeto => {
                             const { id, titulo, img, tecnologias, descricao } = projeto
                             return (
@@ -63,7 +63,7 @@ const Projetos = () => {
                     
                         Acesse meu Github
                     </a>
-                </div>
+            </div>
         </div>
         /*<section className={styles.fullProjects}>
             <h2 className={styles.titulo}>

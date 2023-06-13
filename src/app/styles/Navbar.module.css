@@ -4,16 +4,39 @@
     left: 0;
     width: 100vw;
     height: 52px;
+    margin-top: -52px;
     background-color: #231f20;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 2px 2px 5px 0px #00000060;
+}
+
+@media screen and (min-width: 1024px) {
+    .nav{
+       
+        position: fixed;
+        right: 0px;
+        top: 35%;
+        width: 52px;
+        height: 320px;
+        padding:  30px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0px 13px 13px 0px;
+    }
+
+    .nav section {
+        flex-direction: column;
+        gap: 27px;
+    }
 }
 
 .nav section {
-    width: 100vw;
+    width: 100%;
     display: flex;
+
     justify-content: space-around;
     align-items: center;
     margin-bottom: -8px;
@@ -29,4 +52,30 @@
     padding: 9px;
     border: 4px solid #231f20;
     margin-top: -5px;
+}
+
+.nav #telegram{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .nav section button{
+        display: none;
+    }
+
+    .icons{
+        width: 30px;
+        height: 30px;
+    }
+
+    .icons:hover{
+        color: #fad42d;
+    }
+
+    .nav #telegram{
+        display: flex;
+        width: 25px;
+        height: 25px;
+        
+    }
 }

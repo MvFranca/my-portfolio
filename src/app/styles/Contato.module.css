@@ -7,12 +7,14 @@
     align-items: center;
     padding-top: 70px;
     padding-bottom: 80px;
+    box-shadow: -18px -18px 25px 25px rgba(0, 0, 0, 0.322);
 }
 
 .contato form{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .contato .dados, .assunto{
@@ -27,12 +29,17 @@
 .message{
     border: 1px #231f20 solid;
     text-align: left;
-    
+    padding: 8px;
     background-color: #ffefaa;
     border-radius: 5px;
     height: 200px;
     width: 90vw;
+    max-width: 500px;
     margin-top: 40px;
+}
+
+.message::placeholder{
+    color: #000;
 }
 
 .Assunto{
@@ -93,6 +100,7 @@
 .enviar{
     margin-top: 20px;
     width: 90vw;
+    max-width: 500px;
     border-radius: 5px;
     padding: 13px 0px;
     border: none;
@@ -104,6 +112,7 @@
 
 .contato footer{
     width: 90vw;
+    max-width: 500px;
     border-top: 2px solid #000;
     text-align: center;
     margin-top: 40px;

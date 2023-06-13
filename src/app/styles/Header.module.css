@@ -1,12 +1,14 @@
-@import url(//db.onlinewebfonts.com/c/021f3eb1da35b2a042907dc870c00b9c?family=TwentiethCenturyW01-XBdCn);
+@import url(//db.onlinewebfonts.com/c/05d0872c73920fc4541caa9c7950f686?family=Raisonne+DemiBold);
+@import url(//db.onlinewebfonts.com/c/6138beb83221f6eb46ed08543a304d1d?family=Twentieth+Century);
 
 .cabecalho{
     display: flex;
     flex-direction: column;
     width: 100%;
     background-color: #fce373;
-    font-family: TwentiethCenturyW01-XBdCn, Arial, Helvetica, sans-serif;
     height: max-content;
+    padding-bottom: 30px;
+   color: #231f20;
 }
 
 .cabecalho button{
@@ -29,15 +31,74 @@
     align-items: center;
     padding-top: 20px;
     padding-bottom: 15px;
-    box-shadow: 1px 1px 5px 1px #00000009;
+
+}
+
+.cabecalho nav{
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 20px;
+}
+
+.cabecalho nav a{
+    color: #1f0c00;
+    text-decoration: none;
+    transition: 0.4s all;
+    font-weight: initial;
+    font-family: Twentieth Century, Arial, Helvetica, sans-serif;
+}
+
+.cabecalho nav a:hover{
+    text-decoration: underline;
+
 }
 
 .cabecalho .navegacao p{
-    align-self: center;
-  
-    text-align: center;
-    
-    line-height: 18px;
-    font-size: 1.4rem;
-    
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    line-height: 28px;
+    font-size: 1.4em;
+    font-family: Raisonne DemiBold, Arial;
+}
+
+.github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fce373;
+    padding-bottom: 50px;
+    position: absolute;
+    right: 38px;
+    top: 38px;
+}
+
+.github a{
+    color: #fce373;
+    text-decoration: none;
+    background-color: #231f20;
+    padding: 1rem;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .cabecalho nav a{
+        display: none;
+    }
+
+    .cabecalho .navegacao p{
+        display: block;
+    }
+
+    .github{
+        display: none;
+    }
 }

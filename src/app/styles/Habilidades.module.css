@@ -1,16 +1,27 @@
 .habilidades{
     background-color: #F37449;
     color: #231f20;
-    height: max-content;
+    overflow: hidden;
     display: flex;
+    height: 80vh;
+    width: 100vw;
     align-items: center;
     flex-direction: column;
-    padding-top: 70px;
-    box-sizing: border-box;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    transition: 2s all;
+    box-shadow: -2px -2px 5px 5px rgba(0, 0, 0, 0.086);
 }
 
-
+.fullhab{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+}
 
 .titulo{
     display: flex;
@@ -66,4 +77,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.habilidades .btn{
+    position: relative;
+
+    padding: 10px;
+    color: #fff;
+    background-color: #221b1b9d;
+    border: 2px solid #fff;
+
+}
+
+
+.habilidades .btn:hover{
+    background-color: #F37449;
 }

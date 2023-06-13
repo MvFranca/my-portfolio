@@ -14,7 +14,7 @@ const Contato = () => {
                         <input type="text" name="assunto" placeholder='Digite o assunto' className={styles.assunto}/>
                     </div>
                     <div>
-                        <input type="text" name="message" placeholder='Envie uma mensagem...' className={styles.message}/>
+                        <textarea name="message" placeholder='Envie uma mensagem...' className={styles.message}/>
                     </div>
                 </div>
                 <button type="submit" className={styles.enviar}>Enviar</button>
