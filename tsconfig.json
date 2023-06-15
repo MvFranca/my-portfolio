@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/styles/ProjetoTs.style.ts", "src/components/Projetos.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/styles/ProjetoTs.style.ts", "src/components/Projetos.js", "src/components/Projeto.tsx"],
   "exclude": ["node_modules"]
 }

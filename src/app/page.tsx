@@ -8,31 +8,36 @@ import Contato from '@/components/Contato'
 import Sobre from '@/components/Sobre'
 import MenuMobile from '@/components/menuMobile'
 import Navbar from '@/components/Navbar'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
+import SobremimHabilidades from '@/components/SobremimeHabilidades'
 
 
 export default function Home() {
   const [stateMenu, setStateMenu] = useState(false)
-
+  const tudo = useRef(null)
 
   function abrirFechar(){
     setStateMenu(!stateMenu)
   }
 
+  
+
   return (
     <>
-
-    <Header/>
-    <Projetos/>
-    <Sobre/>
-    <Habilidades/>
-    <Contato/>
-    <MenuMobile
-    stateMenu = {stateMenu}
-    />
-    <Navbar 
-    abrirFechar = {abrirFechar}
-    />
+    <div ref={tudo}>
+      <Header/>
+      <Projetos/>
+      <SobremimHabilidades
+      
+      />
+      <Contato/>
+      <MenuMobile
+      stateMenu = {stateMenu}
+      />
+      <Navbar
+      abrirFechar = {abrirFechar}
+      />
+    </div>
     </>
   )
 }

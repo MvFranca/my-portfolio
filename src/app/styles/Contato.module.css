@@ -8,6 +8,7 @@
     padding-top: 70px;
     padding-bottom: 80px;
     box-shadow: -18px -18px 25px 25px rgba(0, 0, 0, 0.322);
+    font-family: Raisonne DemiBold, Arial;
 }
 
 .contato form{
@@ -89,7 +90,7 @@
     margin-top: 40px;
     display: flex;
     gap: 8px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .contato h2{

@@ -22,6 +22,7 @@
     background-color:#cca69a;
     border-bottom: 2px solid #231f20;
     border-radius: 2px;
+    font-family: Raisonne DemiBold, Arial;
 }
 
 .carrossel{
@@ -57,7 +58,7 @@
 
 
 .container{
-    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    font-family: Raisonne DemiBold, Arial;
     display: flex;
     flex-direction: column;
     align-items: center;

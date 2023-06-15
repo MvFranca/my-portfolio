@@ -7,10 +7,10 @@
     max-width: 400px;
     height: 400px;
     background-color: #231f20;;
-    box-shadow: 0px 0px 3px 3px #9e8077;
+    box-shadow: 0px 0px 3px 0px #9e8077;
     color: #ffffff;
-
-    margin: 15px;
+  
+    margin: 15px 0px;
     padding: 40px 30px;
     transition: all 0.5s;
     border-radius: 5px;
@@ -18,7 +18,7 @@
 }
 
 .projetos:hover{
-    box-shadow: 0px 0px 3px 2px #3b3b3b77;
+    box-shadow: 0px 0px 3px 0px #3b3b3b77;
     background-color: #353535;
 }
 
@@ -57,9 +57,9 @@
 
 .projetos img{
     border-radius: 5px;
-    width: 100%;
+    width: 90%;
     height: 100%;
-    box-shadow: 0px 0px 5px 5px #ffffff13;
+    box-shadow: 0px 0px 5px 0px #ffffff13;
     transition: all 0.5s;
 }
 
@@ -77,4 +77,54 @@
     height: 70%;
     width: 100%;
     
+}
+
+.projetoetec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -23px ;
+    font-family: Raisonne DemiBold, Arial;
+}
+
+.tecnologias{
+    border-radius: 0px 5px 5px 0px;
+    padding: 25px;
+    color: #fff;
+    height: 350px;
+    width: max-content;
+    background-color: #353535;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all;
+}
+
+.tec{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.tec p{
+    width: 50%;
+}
+
+.voltar{
+    margin-right: -152px;
+    transition: 0.5s all;
+}
+
+.voltar:hover{
+    cursor: pointer;
+}
+
+.teste{
+    rotate: 180deg;
+}
+
+@media screen and (max-width: 1024px) {
+    .tecnologias{
+    display: none;}
 }

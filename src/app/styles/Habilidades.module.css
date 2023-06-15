@@ -4,7 +4,7 @@
     overflow: hidden;
     display: flex;
     height: 80vh;
-    width: 100vw;
+    width: 50vw;
     align-items: center;
     flex-direction: column;
     padding-top: 40px;
@@ -13,7 +13,7 @@
 }
 
 .fullhab{
-    width: 100%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -92,4 +92,14 @@
 
 .habilidades .btn:hover{
     background-color: #F37449;
+}
+
+
+@media screen and (max-width: 1024px) {
+.habilidades{
+    width: 100%;
+}
+.fullhab{
+    width: 100%;
+}
 }

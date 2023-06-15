@@ -1,0 +1,31 @@
+@import url(//db.onlinewebfonts.com/c/05d0872c73920fc4541caa9c7950f686?family=Raisonne+DemiBold);
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    flex-wrap: wrap;
+    font-family: Raisonne DemiBold, Arial;
+}
+
+.container img{
+    width: 50%;
+    height: 115vh;
+}
+
+.habeSobre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+    .container img{
+    display: none;
+}
+.habeSobre{
+    width: 100%;
+}
+}

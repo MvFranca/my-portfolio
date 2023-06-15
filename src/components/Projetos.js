@@ -5,6 +5,7 @@ import styles from '../app/styles/Projetos.module.css'
 
 import IconGithub from './icons/iconGithub'
 import Carousel from 'react-elastic-carousel'
+
 import Projeto from './Projeto'
 
 const Projetos = () => {
@@ -27,11 +28,16 @@ const Projetos = () => {
       /*  await fetch('http://localhost:3000/dados/carrossel.json').then((response) => response.json()).then(setProjetos) */
     }
 
+    const [menuTec, setMenuTec] = useState(true)
+
     useEffect(() => {
         api()
     }, [])
 
-    
+    function fecharTec(){
+        setMenuTec(!menuTec)
+        
+    }
 
     return (
         <div className={styles.fullProjects}>
@@ -39,7 +45,9 @@ const Projetos = () => {
                 PROJETOS
             </h2>
             <div className={styles.projetos}>
-                <Carousel isRTL breakPoints={breakPoints} className={styles.carrossel}>
+                <Carousel isRTL breakPoints={breakPoints} className={styles.carrossel}
+                showT
+                >
                  {projetos.map(projeto => {
                             const { id, titulo, img, tecnologias, descricao } = projeto
                             return (
@@ -50,6 +58,8 @@ const Projetos = () => {
                                     tecnologias={tecnologias}
                                     description={descricao}
                                     key={id}
+                                    fecharTec = {fecharTec}
+                                    stateTec = {menuTec}
                                 />
                             )
                         })}
